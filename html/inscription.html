@@ -10,22 +10,32 @@
         <a href="../html/index.html"><button class="btn btn-danger">Home</button></a>
         <a href="../html/connexion.html"><button class="btn btn-danger">Connexion</button></a><br><br><br>
         <form>
-            <div class="form-row">
-                <div class="col">
-                    <input type="text"  name="nom" id="nom" placeholder="Nom" class="form-control" required ><br>
-                </div>
-                <div class="col">
-                    <input type="text"  name="prenom" id="prenom" placeholder="Prénom" required class="form-control"><br>
-                    </div>
-            </div>
-            
+            <input type="text"  name="nom" id="nom" placeholder="Nom" class="form-control" required ><br>
+            <input type="text"  name="prenom" id="prenom" placeholder="Prénom" required class="form-control"><br>
             <input type="number"  name="tel" id="tel" placeholder="Télephone" required class="form-control"><br>
             <b>Gender</b><br>
-            <input type="radio" name="gender" value="male">male <br>
-            <input type="radio" name="gender" value="female">female<br>
-            <input type="radio" name="gender" value="autre">Autre<br>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="femaleid" value="female" checked>
+                <label class="form-check-label" for="femaleid">
+                    Female                
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="maleid" value="male" checked>
+                <label class="form-check-label" for="maleid">
+                        Male                
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="autresid" value="autres" checked>
+                <label class="form-check-label" for="autresid">
+                            Autres                
+                </label>
+            </div>
             <b>Adresse Email</b>
-            <input type="email" name="email" placeholder="Email"><br>
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
             <b>Date de Naissance</b>
             <input type="date" name="birthday" ><br>
             <b>Nationalité</b>
