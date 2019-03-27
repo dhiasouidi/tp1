@@ -2,19 +2,24 @@
     <head>
         <meta charset="utf-8"/>
         <title>Connexion</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="../css/style.css"/>
     </head>
-    <body>
-        <img src="../images/logo-01.png" alt="Logo" height="160" width="250"><br><br>
-        <a href="../html/inscription.html"><button>Inscription</button></a><br><br>
-        <a href="../html/index.html"><button>Home</button></a><br><br>
+    <body class="body">
+        <img src="../images/logo1.png" alt="Logo" height="120" width="150" class="rounded float-left" ><br><br>
+        <a href="../html/inscription.html"><button class="btn btn-danger">Inscription</button></a>
+        <a href="../html/index.html"><button class="btn btn-danger">Home</button></a><br><br><br>
         <form>
-            <b>email</b>
-            <input type="email" name="email" placeholder="email"><br>
-            <b>Mot de Passe</b>
-            <input type="password" name="password" placeholder="Mot de Passe"><br>
-            <a href="../html/home.html"><input type="button" value="Se Connecter"></a>
-            <input type="reset" value="Reset"/>
-        </form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary center">Connecter</button>
+              </form>
 
 
 
