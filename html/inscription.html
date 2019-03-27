@@ -37,16 +37,18 @@
                 <input type="email" class="form-control" id="email" placeholder="name@example.com">
             </div>
             <b>Date de Naissance</b>
-            <input type="date" name="birthday" ><br>
+            <input type="date" name="birthday" ><br><br>
             <b>Nationalité</b>
-            <select>
-                    <option value="placeholder" disabled selected >Nationalité</option>
-                    <option value="tunisia" >Tunisia</option>
-                    <option value="algeria">Algeria</option>
-                    <option value="maroc">Maroc</option>
-                    <option value="libya">Libya</option>
-                    <option value="egypt">Egypt</option>
-                </select><br>
+            <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Tunisia</option>
+                      <option>Algeria</option>
+                      <option>Maroc</option>
+                      <option>Libya</option>
+                      <option>Egypt</option>
+                </select>
+            </div>
+         
             <b>Intérets</b><br>
             <input type="checkbox" value="programming" >Programming<br>
             <input type="checkbox" value="music" >Music<br>
@@ -54,11 +56,15 @@
             <input type="checkbox" value="sports" >Sports<br>
             <input type="checkbox" value="science" >Science<br>
             <input type="checkbox" value="politics" >Politics<br>
-            <b>Mot de Passe</b><br>
-            <input type="password" name="password" placeholder="Mot de Passe"><br>
-            <input type="password" name="rpassword" placeholder="Reentrer Mot de Passe"><br>
-            <input type="submit" value="S'inscrire"/>
-            <input type="reset" value="Reset"/>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"><br>
+                <input type="rpassword" class="form-control" id="exampleInputPassword1" placeholder="Reenter Password">
+
+            </div>
+            <input type="submit" value="S'inscrire" class="btn btn-success"/>
+            <input class="btn btn-danger" type="reset" value="Reset">
+
         </form>
     </body>
 </html>
