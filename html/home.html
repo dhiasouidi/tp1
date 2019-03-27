@@ -1,15 +1,17 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>Profile</title>
+        <title>Home</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="../css/style.css"/>
     </head>
-    <body>
-            <img src="../images/logo-01.png" alt="Logo" height="160" width="250"><br><br>
-            <a href="../html/connexion.html"><button>Déconnexion</button></a><br><br>
-            <a href="../html/profile.html"><button>Profile</button></a><br><br>
+    <body class="body">
+            <img src="../images/logo1.png" alt="Logo" height="120" width="150" class="rounded float-left" ><br><br>
+            <a href="../html/connexion.html"><button class="btn btn-danger">Déconnexion</button></a>
+            <a href="../html/profile.html"><button class="btn btn-danger">Profile</button></a><br><br><br> 
             <h2>TO-DO</h2>
-            <a href="../html/ajouttodo.html"><button>Ajouter TO-DO</button></a><br><br>
-            <table border="1">
+            <a href="../html/ajouttodo.html"><button class="btn btn-dark" >Ajouter TO-DO</button></a><br><br>
+            <table border="1" class="table table-dark">
                     <thead >
                         <tr>
                             <th>Description</th><th>Date d'Ajout</th><th>Action</th>
@@ -20,17 +22,17 @@
                         <tr>
                             <td>Formation Web</td>
                             <td>23/03/2019</td>
-                            <td><button>Done</button></td>
+                            <td><button class="btn btn-success">Done</button></td>
                         </tr>
                         <tr>
                             <td>Formation Mobile</td>
                             <td>25/03/2019</td>
-                            <td><button>Done</button></td>
+                            <td><button class="btn btn-success">Done</button></td>
                         </tr>
                         <tr>
                             <td>Révision</td>
                             <td>24/03/2019</td>
-                            <td><button>Done</button></td>
+                            <td><button class="btn btn-success">Done</button></td>
                         </tr>
                     </tbody>
                 </table>
